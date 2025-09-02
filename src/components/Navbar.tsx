@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 // import Logo from '../assets/LandingPage/Vibe logo best2 editted long-16.webp'
 import LogoLight from  '../assets/LandingPage/Vibe logo best2 editted long-12.webp'
-import LogoDark from '../assets/LandingPage/20250831_2008_White_Dark-Theme_Version_remix_01k40hff5cf94v7n01fs4t3d0x-removebg-preview.png';
+// import LogoDark from '../assets/LandingPage/20250831_2008_White_Dark-Theme_Version_remix_01k40hff5cf94v7n01fs4t3d0x-removebg-preview.png';
 
 interface NavbarProps {
   cartItemsCount: number;
