@@ -10,10 +10,10 @@ import Vouchers from '../assets/LandingPage/kes. 1000.png';
 import FridgeMagnet from '../assets/LandingPage/custom-fridge-magnet.jpg';
 
 // Import product images
-import ToteBag1 from '../assets/LandingPage/totebags.png';
-import ToteBag2 from '../assets/LandingPage/totebags.png';
-import Mug1 from '../assets/LandingPage/totebags.png';
-import Mug2 from '../assets/LandingPage/totebags.png';
+import ToteBag1 from '../data/ToteBags/black-white-canvas-tote-bag-Thailand.jpg';
+import ToteBag2 from '../data/ToteBags/JuteToteBag.webp';
+import Mug1 from '../data/DrinkWare/CeramicMug.webp';
+import Mug2 from '../data/DrinkWare/InsulatedTumbler.webp';
 
 export const categories = [
   {

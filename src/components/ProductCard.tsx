@@ -27,7 +27,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, addToCart }) => {
         <img 
           src={product.image} 
           alt={product.name}
-          className="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
+          className=" h-fit object-contain transition-transform duration-300 hover:scale-105"
         />
         {isHovered && (
           <div className="absolute inset-0 bg-black/30 bg-opacity-40 flex items-center justify-center">

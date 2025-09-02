@@ -66,7 +66,7 @@ const CategoryPage: React.FC = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8 mt-20">
+    <div className="container mx-auto px-4 py-8 mt-25">
       {/* Breadcrumb */}
       <nav className="flex mb-6" aria-label="Breadcrumb">
         <ol className="flex items-center space-x-2">

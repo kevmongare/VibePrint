@@ -6,7 +6,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProductShowcase from './components/ProductShowcase';
 import CompanySlider from './components/SliderCompanies';
-
+import ShopPage from '../src/assets/pages/ShopPage';
+import AIChat from './components/AIChat';
 import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
 import CartModal from './components/CartModal';
@@ -121,7 +122,7 @@ const App = () => {
                 clearCart={clearCart}
               />
 
-              
+
         <Routes>
           <Route path="/" element={
             <>
@@ -138,8 +139,10 @@ const App = () => {
           <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/category/:categorySlug" element={<CategoryPage />} />
           <Route path="/product/:productId" element={<ProductDetailPage />} />
+          <Route path="/shop" element={<ShopPage addToCart={addToCart} />} />
         </Routes>
         <CallToAction />
+             <AIChat/> 
               <Whatsapp/>
               <Footer />
               
