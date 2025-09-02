@@ -1,5 +1,5 @@
 // components/CallToAction.jsx
-import React from 'react';
+
 
 const CallToAction = () => {
   return (

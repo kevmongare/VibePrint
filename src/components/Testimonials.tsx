@@ -1,5 +1,5 @@
 // components/Testimonials.jsx
-import React from 'react';
+
 
 const Testimonials = () => {
   const testimonials = [
