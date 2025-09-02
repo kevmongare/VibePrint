@@ -33,7 +33,7 @@ const ProductShowcase: React.FC<ProductShowcaseProps> = ({ addToCart }) => {
             </Link>
             <div className="p-6">
               <Link to={`/product/${product.id}`}>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2 hover:text-[#FF6F20] transition-colors">{product.name}</h3>
+                <h3 className="text-xl  text-gray-900 mb-2 hover:text-[#FF6F20] transition-colors">{product.name}</h3>
               </Link>
               <p className="text-gray-600 mb-4">{product.description}</p>
               <div className="flex items-center justify-between">
