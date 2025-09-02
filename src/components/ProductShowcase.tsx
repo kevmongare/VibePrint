@@ -15,8 +15,13 @@ const ProductShowcase: React.FC<ProductShowcaseProps> = ({ addToCart }) => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">Featured Products</h2>
+       <Link to='/Shop'
+      >
+                <p className='px-5 py-2 bg-[#FF6F20] text-white rounded-dm transition-colors text-right underline -mt-5'>Shop All ⇥</p>
+              </Link>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-auto  p-5 bg-white shadow-md ">
+        
         {featuredProducts.map((product: Product) => (
           
           <div key={product.id} className="bg-white rounded-b-sm hover:shadow-md overflow-hidden transform duration-300 hover:-translate-y-2 cursor-pointer ">
@@ -44,11 +49,16 @@ const ProductShowcase: React.FC<ProductShowcaseProps> = ({ addToCart }) => {
                 >
                   Add to Cart
                 </button>
+                
               </div>
             </div>
+            
           </div>
+          
         ))}
+        
       </div>
+     
     </div>
   );
 };
