@@ -1,22 +1,22 @@
 // components/AIChat.tsx
 import React, { useState, useRef, useEffect } from 'react';
-import { products, categories } from '../data/products';
+import { products} from '../data/products';
 
 interface ChatMessage {
   id: number;
-  text: string | JSX.Element;
+  text: string | React.ReactNode;
   sender: 'user' | 'bot';
   timestamp?: Date;
   suggestions?: string[];
   isOrderOption?: boolean;
 }
 
-interface OrderDetails {
-  productName?: string;
-  quantity?: number;
-  color?: string;
-  customization?: string;
-}
+// interface OrderDetails {
+//   productName?: string;
+//   quantity?: number;
+//   color?: string;
+//   customization?: string;
+// }
 
 const AIChat: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,7 +55,7 @@ const AIChat: React.FC = () => {
   const mpesaAccount = "VibePrint";
 
   // Enhanced AI response logic with order handling
-  const generateAIResponse = (message: string): { text: string | JSX.Element, suggestions?: string[], isOrderOption?: boolean } => {
+  const generateAIResponse = (message: string): { text: string | React.ReactNode, suggestions?: string[], isOrderOption?: boolean } => {
     const lowerMessage = message.toLowerCase();
     
     // Greetings
