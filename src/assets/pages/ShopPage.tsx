@@ -24,13 +24,13 @@ const ShopPage: React.FC<ShopPageProps> = ({ addToCart }) => {
   });
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-3xl font-bold text-gray-900 mb-8">Shop All Products</h1>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-20">
+      <h1 className="text-3xl font-bold text-gray-900 mb-8 sticky top-28">Shop All Products</h1>
       
       <div className="flex flex-col md:flex-row gap-8">
         {/* Sidebar with categories */}
-        <div className="w-full md:w-64">
-          <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="w-full md:w-64 ">
+          <div className="bg-white p-6 rounded-lg shadow-md sticky top-42">
             <h2 className="text-lg font-semibold text-gray-900 mb-4">Categories</h2>
             <ul className="space-y-2">
               <li>
@@ -56,7 +56,7 @@ const ShopPage: React.FC<ShopPageProps> = ({ addToCart }) => {
         </div>
 
         {/* Products grid */}
-        <div className="flex-1">
+        <div className="flex-1 bg-white p-10">
           <div className="flex justify-between items-center mb-6">
             <p className="text-gray-600">{sortedProducts.length} products found</p>
             <select
@@ -73,7 +73,7 @@ const ShopPage: React.FC<ShopPageProps> = ({ addToCart }) => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {sortedProducts.map((product: Product) => (
-              <div key={product.id} className="bg-white rounded-lg shadow-md hover:shadow-lg overflow-hidden transition-shadow duration-300">
+              <div key={product.id} className="bg-white hover:rounded-md  hover:shadow-lg overflow-hidden transition-shadow duration-300">
                 <Link to={`/product/${product.id}`}>
                   <div className="h-56 overflow-hidden">
                     <img

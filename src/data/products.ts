@@ -5,7 +5,7 @@ import type { Product} from '../types';
 import ToteBags from '../assets/LandingPage/totebags.png';
 import Drinkware from '../assets/LandingPage/download (2).png';
 import Corporate from '../assets/LandingPage/CorporateBranding.png';
-import Apparels from '../assets/LandingPage/LORD-4_edited.png';
+import Apparels from '../data/Apparels/Tshirts/T5.webp';
 import Vouchers from '../assets/LandingPage/kes. 1000.png';
 import FridgeMagnet from '../assets/LandingPage/custom-fridge-magnet.jpg';
 
@@ -161,6 +161,36 @@ export const products: Product[] = [
     price: 1800,
     image: Mug2,
     category: "drinkware",
+    description: "Double-walled stainless steel tumbler",
+    inStock: true,
+    tags: ["insulated", "travel", "stainless steel"],
+    images: [Mug2, Mug1],
+    details: "Keep your drinks hot or cold for hours with our premium insulated tumbler. Leak-proof lid and comfortable grip.",
+    variations: [
+      {
+        id: 8,
+        name: "12oz - Silver",
+        price: 1800,
+        inStock: true,
+        attributes: { Size: "12oz", Color: "Silver" }
+      },
+      {
+        id: 9,
+        name: "16oz - Black",
+        price: 2000,
+        inStock: true,
+        attributes: { Size: "16oz", Color: "Black" }
+      }
+    ]
+  },
+
+  ////
+    {
+    id: 202,
+    name: "Insulated Travel Tumbler",
+    price: 1800,
+    image: Apparels,
+    category: "apparels",
     description: "Double-walled stainless steel tumbler",
     inStock: true,
     tags: ["insulated", "travel", "stainless steel"],
