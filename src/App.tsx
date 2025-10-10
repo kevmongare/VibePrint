@@ -16,6 +16,7 @@ import CheckoutPage from './components/CheckoutPage';
 import Collection from './components/Collection';
 import CategoryPage from './components/CategoryPage';
 import ProductDetailPage from './components/ProductDetailPage';
+import ContactUs from './pages/ContactUs';
 import type { Product, CartItem } from './types';
 
 const App = () => {
@@ -137,6 +138,7 @@ const App = () => {
           } />
           
           <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path='/ContactUs' element ={<ContactUs/>}/>
           <Route path="/category/:categorySlug" element={<CategoryPage />} />
           <Route path="/product/:productId" element={<ProductDetailPage />} />
           <Route path="/shop" element={<ShopPage addToCart={addToCart} />} />

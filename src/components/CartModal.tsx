@@ -41,11 +41,11 @@ const CartModal: React.FC<CartModalProps> = ({
             ? `${item.product.name} (${Object.values(item.selectedVariation.attributes).join(', ')})`
             : item.product.name;
           const itemPrice = item.selectedVariation ? item.selectedVariation.price : item.product.price;
-          return `- ${itemName}: $${itemPrice.toFixed(2)} x ${item.quantity}`;
+          return `- ${itemName}: KSh ${itemPrice.toLocaleString()} x ${item.quantity}`;
         }).join('%0A') +
-        `%0A%0ASubtotal: $${subtotal.toFixed(2)}%0ATax: $${tax.toFixed(2)}%0ATotal: $${total.toFixed(2)}%0A%0APlease let me know how to proceed.`;
+        `%0A%0ASubtotal: KSh ${subtotal.toLocaleString()}%0ATax: KSh ${tax.toLocaleString()}%0ATotal: KSh ${total.toLocaleString()}%0A%0APlease let me know how to proceed.`;
       
-      window.open(`https://wa.me/1234567890?text=${message}`, '_blank');
+      window.open(`https://wa.me/254701643555?text=${message}`, '_blank');
     } else {
       onClose();
       navigate('/checkout');
@@ -111,7 +111,7 @@ const CartModal: React.FC<CartModalProps> = ({
                                   <div className="flex justify-between text-base font-medium text-gray-900">
                                     <h3>{item.product.name}</h3>
                                     <p className="ml-4">
-                                      Kes {item.selectedVariation ? item.selectedVariation.price.toLocaleString() : item.product.price.toLocaleString()}
+                                      KSh {(item.selectedVariation ? item.selectedVariation.price : item.product.price).toLocaleString()}
                                     </p>
                                   </div>
                                   <p className="mt-1 text-sm text-gray-500">{item.product.category}</p>
@@ -169,15 +169,15 @@ const CartModal: React.FC<CartModalProps> = ({
                       <div className="mt-6 border-t border-gray-200 py-6">
                         <div className="flex justify-between text-base font-medium text-gray-900">
                           <p>Subtotal</p>
-                          <p>Kes {subtotal.toFixed(2)}</p>
+                          <p>KSh {subtotal.toLocaleString()}</p>
                         </div>
                         <div className="flex justify-between text-sm text-gray-500 mt-1">
                           <p>Tax (8%)</p>
-                          <p>Kes {tax.toFixed(2)}</p>
+                          <p>KSh {tax.toLocaleString()}</p>
                         </div>
                         <div className="flex justify-between text-lg font-bold text-gray-900 mt-2">
                           <p>Total</p>
-                          <p>Kes {total.toFixed(2)}</p>
+                          <p>KSh {total.toLocaleString()}</p>
                         </div>
                       </div>
                       <div className="mt-6">

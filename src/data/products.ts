@@ -3,10 +3,10 @@ import type { Product} from '../types';
 
 // Import your images
 import ToteBags from '../assets/LandingPage/totebags.png';
-import Drinkware from '../assets/LandingPage/download (2).png';
+import Drinkware from '../assets/LandingPage/Drinkware1.png';
 import Corporate from '../assets/LandingPage/CorporateBranding.png';
-import Apparels from '../data/Apparels/Tshirts/T5.webp';
-import Vouchers from '../assets/LandingPage/kes. 1000.png';
+import Apparels from '../assets/LandingPage/Apparels.png';
+import Vouchers from '../assets/LandingPage/Vouchers.png';
 import FridgeMagnet from '../assets/LandingPage/custom-fridge-magnet.jpg';
 
 // Import product images

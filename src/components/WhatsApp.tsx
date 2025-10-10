@@ -1,6 +1,6 @@
 export default function Whatsapp(){
    //whatsapp
-  const phoneNumber = "254706384510"; 
+  const phoneNumber = "254701643555"; 
   const message = "Hello! I'm interested in your services.";
 
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

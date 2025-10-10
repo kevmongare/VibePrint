@@ -1,4 +1,5 @@
 // components/AIChat.tsx
+import type { JSX } from 'react';
 import React, { useState, useRef, useEffect } from 'react';
 import { products} from '../data/products';
 
